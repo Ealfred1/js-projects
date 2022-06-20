@@ -1,0 +1,96 @@
+body {
+	background:  #99DB24;/*#5CDB95;linear-gradient(45deg, yellow, blue, navy, skyblue, yellow);*/
+	margin:  0;
+	padding:  0;
+	box-sizing:  border-box;
+	font-family:  emoji;
+	display:  flex;
+	justify-content:  center;
+	align-items:  center;
+	/*background-repeat:  no-repeat;
+	background-size:  cover;
+	background-position:  center;
+	background-attachment:  fixed;*/
+}
+
+.container {
+	background:  rgba(255,255,255,0.3);
+	width: 50%;
+	height:  100%;
+	display:  flex;
+	justify-content:  center;
+	align-items:  center;
+	flex-direction:  column;
+	border-radius:  20px;
+	margin-top:  10%;
+	padding:  5px;
+}
+
+h2 {
+	font-weight:  bold;
+	color:  blue;
+	font-style:  italic;
+	text-align: center;
+}
+
+input[type=text] {
+	border:  2px solid #00AA00;
+	border-style:  none none solid none;
+	width:  30rem;
+	height:  10vh;
+	color:  black;
+	background:  none;
+	font-weight:  bold;
+}
+
+input[type=text]:focus {
+	border:  none;
+}
+
+input[type=button], input[type=reset] {
+	background:  blue;
+	color:  white;
+	width:  50%;
+	padding:  15px;
+	border-radius:  20px;
+	margin: 10px;
+}
+	
+.c {
+	display:  flex;
+	flex-direction:  row;
+	justify-content:  space-between;
+}
+
+input[type=button]:hover {
+	opacity:  0.7;
+}
+
+ input[type=reset]:hover {
+	 opacity:  0.7;
+ }
+ 
+ @media only screen and (max-width:  600px) {
+	 .container {
+		 width:  100vw;
+		 border:  none;
+		 height:  100vh;
+		 background:  none;
+		 text-align:  center;
+		 overflow-x:  hidden;
+		 margin-top:  0;
+	 }
+	 input[type=text] {
+		 width:  30rem;
+		 height:  5vh;
+	 }
+	 input[type=button], input[type=reset] {
+		 padding:  10px;
+		 margin:  10px;
+	 }
+ }
+ 
+::placeholder {
+	font-weight:  bold;
+	color:  rgba(0,0,0, 0.6);
+}

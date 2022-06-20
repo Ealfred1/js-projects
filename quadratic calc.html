@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Quadratic equation solver</title>
+		<link rel="stylesheet" href="solver.css">
+		<link rel="icon" href="fav.gif">
+		<script type="text/javascript">
+		function calc() {
+		let a = document.getElementById ("input1").value;
+		let b = document.getElementById ("input2").value;
+		let c = document.getElementById ("input3").value;
+		
+		let d = Math.pow(b,2) - (4 * a * c);
+		let root1 = (- b + Math.sqrt(Math.abs(d)))/(2*a);
+		let root2 = (-b - Math.sqrt(Math.abs(d)))/(2*a);
+		if(a||b||c > 0) {
+		alert(`The Root Of  The Equation = ${root1.toFixed(1)} and ${root2.toFixed(1)}`);
+		}
+		  else {
+		alert(" There is no input, input a value and try again");
+		} 
+		}
+		</script>
+	</head>
+		<body>
+			<div class="container">
+				<div class="title">
+					<h2> Quadratic Equation Calculator</h2>
+				</div>
+					<form name="cal"id="form2s" method="POST">
+						<input type="text" id="input1"placeholder=" coefficient of x² " required> <br><br>
+						<input type="text" id="input2" placeholder=" coefficient of x" required><br><br>
+						<input type="text" id="input3" placeholder="constant num" required><br><br>
+						<div class="c">
+						<input type="button" onclick="calc()" id="calc-btn" value="Calculate">
+						<input type="reset" id="reset-btn" value="Reset">
+						</div>
+					</form>
+			</div>
+		</body>
+</html>
+		

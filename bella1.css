@@ -1,0 +1,181 @@
+body {
+	background:     linear-gradient(45deg, black,purple,orange);
+	font-family:  Arial, sans-serif;
+}
+
+.header {
+	display:  flex;
+	flex-direction:  row;
+	justify-content:  space-around;
+	padding:  3px 3px 3px 4px;
+	border-style:  hidden;
+	position:  fixed;
+	width:  100%;
+	background-color:  #440830;
+	z-index:  1;
+	margin: 0;
+	text-align:  left;
+	top:  0;
+	
+}
+
+nav ul li {
+	display:  inline;
+	list-style-type:  none;
+}
+
+
+a {
+	color:  lightgray;
+	text-decoration:  none;
+	text-shadow:  0 0 3px purple, 0 0 5px pink;
+	padding:  10px 10px 10px 15px;
+}
+
+a:hover {
+	color:  black;
+	text-shadow:  0 0 5px purple, 0 0  9px pink;
+	transition: all -2s linear;
+}
+
+a:active {
+	text-decoration:  underline blue;
+}
+
+.h23 {
+	color:  orange;
+	font-family:  "Brush Script MT", cursive;
+}
+
+p {
+	color:  white;
+	text-shadow:  0 0 3px purple, 0 0 5px pink;
+	padding-top:  10px;
+}
+
+.hhh {
+	color:  orange;
+	text-decoration:  underline pink;
+	line-height:  1.8;
+}
+
+.cnt {
+	color:  white;
+	text-shadow:  0 0 3px purple, 0 0 5px #F104A6;
+	line-height:  1.5;
+}
+
+.icon {
+	font-size:  1.6em;
+	color:  pink;
+}
+
+input[type=text], input[type=email] {
+	width:  20%;
+	height:  6vh;
+	font-size:  small;
+	border-color:  orange;
+}
+
+textarea {
+	border-color:  orange;
+}
+
+.submit-btn {
+	background:  orange;
+	color: white;
+	text-shadow:  0 0 3px purple, 0 0 5px #F104A6;
+	padding:   10px;
+	width:  20%;
+}
+
+.h-2 {
+	color:  orange;
+	padding-top:  50px;
+}
+
+/*@media only screen and (max-width: 600px) {
+	.header {
+	display:  flex;
+	justify-content:  space-between;
+	flex-direction:  column;
+	border-style:  hidden;
+	position:  fixed;
+	width:  30%;
+	background-color:  #440830;
+	text-align:  left;
+	z-index:  1;
+	top:  0;
+	left:  0;
+	height:  100%;
+	overflow-x:  hidden;
+	}
+	.container {
+		margin-left:  35%;
+	}
+	.h23 {
+		display: none;
+	}
+	a {
+		display:  block;
+	}
+	a:hover {
+		background:  orange;
+	}
+}
+
+	input[type=text], input[type=email] {
+	width:  60%;
+	}
+}*/
+@media only screen and (max-width: 600px), (max-width:  720px)  {
+	.header {
+	display:  flex;
+	justify-content:  space-between;
+	flex-direction: row;
+	border-style:  hidden;
+	position:  fixed;
+	width:  100%;
+	height:  auto;
+	background-color:  #440830;
+	text-align:  left;
+	z-index:  1;
+	top:  0;
+	cursor:  pointer;
+	}
+.dropdown {
+	display:  block;
+	margin:  0;
+	color:  white;
+	font-size:  20px;
+	position:  relative;
+}
+
+.drop-content {
+	display:  none;
+	background:    #440830;
+	position:  absolute;
+	width:  30%;
+	height:  auto;
+	box-shadow:  0 0 3px #101010;
+	z-index:  1;
+	right:  0;
+	text-align:  left;
+}
+
+.drop-content li a{
+	display:  block;
+	padding:  15px;
+	color:  lightgray;
+	text-decoration:  none;
+	text-shadow:  0 0 3px purple, 0 0 5px pink;
+}
+.drop-content li a:hover {
+	background:  orange;
+}
+
+.show {
+	display:  block !important;
+}
+
+

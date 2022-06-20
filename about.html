@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="about.css">
+			<link rel="icon" href="fav.gif">
+			<script>
+			function drop() {
+		const drop =  document.querySelector(".drop-content");
+		drop.classList.toggle("show");
+		}
+		window.onclick = function(event) {
+		if (!event.target .matches(".dropdown"))  {
+		let dropdowns =  document.querySelector (".drop-content");
+		for (let i = 0; i < dropdowns.length; i++) {
+		let opendropdown = dropdowns[i];
+		if (opendropdown.classList.contains("show")) {
+		opendrpdown.classList.remove("show");
+		}
+		}
+		}
+		}
+		</script>
+		</head>
+			<body>
+			<div class="container">
+				<div class="header">
+				<h3 class="h23"> Bella Designs</h3>
+					<nav>
+							<ul>
+							<li><a onclick="drop()" class="dropdown"> &#9776;</a></li>
+							<div class="drop-content">
+								<li><a href="bella.html" aria-current="page"> Home</a></li>
+								<li><a href="contact.html"> Contact</a></li>
+								<li><a href="about.html"> About</a></li>
+								<li><a href="order.html"> Order</a></li>
+								<li><a href="service.html"> Services</a></li>
+								<li><a href="Logins.html"> Login</a></li>
+								<li><a href="signup.html"> Sign Up</a></li>
+								</div>
+							</ul>
+					</nav>
+				</div>
+				<div class="theme">
+				<span class="icon"><i class=" fa fa-user"></i></span>
+				<h2 class="hh"> About Us</h2><br><br>
+				<p>
+				BELLA DESIGNS is a company <br>
+				-------------------------------------------------------------------------------------------------------------<br>
+				----------------------------------------------------------------------------------------------------------------------<br>-------------------------------------------------------------------------------------------------------<br>
+				---------------------------------------------------------------------------------------------------------------<br>
+				----------------------------------------------------------------------------------------------------------------<br>
+				------------------------------------------------------------------------------------------------------------------<br>
+				</p>
+				</div>
+			</div>
+		</body>
+	</html>
+				
+				
+				 
+				 
